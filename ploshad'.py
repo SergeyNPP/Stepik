@@ -5,6 +5,6 @@ import math
 n = int(input())  # Натуральное число (Сторон)
 a = float(input())  # Действительное число (Длина)
 S = (
-    n * a * a / (4 * math.tan(math.pi / n))
+    n * math.pow(a, 2) / (4 * math.tan(math.pi / n))
 )  # Площадь правильного многоугольника с длиной стороны a и количеством сторон n
 print(S)
